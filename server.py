@@ -58,5 +58,5 @@ async def put():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="192.168.0.22", port=5000)
+    uvicorn.run(app, host="192.168.0.22", port=5000)  ###STATIC IP ADRESS###
     app.run(debug = True)
