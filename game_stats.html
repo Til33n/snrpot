@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<center>
+<title>Game_stats</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+<body>
+
+<div>
+  <h2>Tabs</h2>
+  <p>Tabs are perfect</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button onclick="openCity('scores')">Scores</button>
+  <button onclick="openCity('Paris')">Game sessions</button>
+  <button onclick="openCity('Tokyo')">Players</button>
+  <button onclick="openCity('scores')">Account</button>
+  <button onclick="openCity('Paris')">Log out</button>
+  <button onclick="openCity('Tokyo')">Download link</button>
+</div>
+</center>
+
+
+
+<div id="scores" class="w3-container city">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<h2>Table of scores</h2>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td> 
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td> 
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td> 
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+  </tr>
+</table>
+
+</body>
+</html>
+</div>
+
+
+
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
